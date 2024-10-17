@@ -75,3 +75,14 @@ Create a SQL script to define a users table with:
 Ensure the table won't be recreated if it exists.
 
 **File**: `0-uniq_users.sql`
+
+### Task 1: In and not out
+
+Create a SQL script to define a users table with the following attributes:
+
+- `id`: integer, primary key, auto-increment.
+- `email`: string (255 characters), unique, not null.
+- `name`: string (255 characters).
+- `country`: enumeration (US, CO, TN), not null (default is US).
+
+Ensure the table won't be recreated if it exists.
