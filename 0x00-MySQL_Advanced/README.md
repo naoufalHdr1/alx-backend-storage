@@ -165,3 +165,14 @@ Write a SQL script that creates a stored procedure `ComputeAverageScoreForUser` 
 Ensure the script is executable on any database.
 
 **File**: `7-average_score.sql`
+
+### Task 8: Optimize simple search
+
+Write a SQL script that creates an index `idx_name_first` on the `names` table, indexing only the first letter of the `name` column. The script should:
+
+- Use an index on the first letter of the `name` field.
+- Optimize searches for names that start with a specific letter, such as `LIKE 'a%'`.
+
+Ensure the script is executable on any database and improves query performance for searches starting with a letter.
+
+**File**: `8-index_my_names.sql`
