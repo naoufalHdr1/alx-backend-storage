@@ -126,3 +126,19 @@ Create a SQL script that defines a trigger to decrease the `quantity` of an item
 Ensure the script is executable on any database.
 
 **File**: `4-store.sql`
+
+### Task 5: Email validation to sent
+
+Write a SQL script that creates a trigger to reset the `valid_email` attribute only when the `email` has been changed. The script should:
+
+1. Define the `users` table with the following columns:
+    - `id` (integer, auto-increment, primary key)
+    - `email` (string, not null)
+    - `name` (string)
+    - `valid_email` (boolean, not null, default 0)
+2. Insert initial data into the `users` table.
+3. Implement a trigger that sets `valid_email` to 0 when the `email` is updated.
+
+Ensure the script is executable on any database.
+
+**File**: `5-valid_email.sql`
