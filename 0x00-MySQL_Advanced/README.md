@@ -86,3 +86,18 @@ Create a SQL script to define a users table with the following attributes:
 - `country`: enumeration (US, CO, TN), not null (default is US).
 
 Ensure the table won't be recreated if it exists.
+
+**File**: `1-country_users.sql`
+
+### Task 2: Best band ever!
+
+Create a SQL script that ranks the origins of metal bands based on the number of non-unique fans. The script should:
+
+1. Import the data from the [`metal_bands.sql.zip`](https://intranet.alxswe.com/rltoken/uPn947gnZLaa0FJrrAFTGQ) file.
+2. Output the results in a table with the columns:
+    - `origin`
+    - `nb_fans`
+
+The output should be ordered by the number of fans in descending order. Ensure that the script can be executed on any database.
+
+**File**: 2-fans.sql
