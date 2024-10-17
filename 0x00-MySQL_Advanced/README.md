@@ -100,4 +100,17 @@ Create a SQL script that ranks the origins of metal bands based on the number of
 
 The output should be ordered by the number of fans in descending order. Ensure that the script can be executed on any database.
 
-**File**: 2-fans.sql
+**File**: `2-fans.sql`
+
+### Task 3: Old school band
+
+Create a SQL script that lists all bands with `Glam rock` as their main style, ranked by their longevity. The script should:
+
+1. Import data from the [`metal_bands.sql.zip`](https://intranet.alxswe.com/rltoken/uPn947gnZLaa0FJrrAFTGQ) file.
+2. Include the following columns in the output:
+    - `band_name`
+    - `lifespan` (calculated as the number of years from the band's formation until 2022).
+
+Ensure that the lifespan is computed using the band's formation year, and the script should be executable on any database.
+
+**File**: `3-glam_rock.sql`
