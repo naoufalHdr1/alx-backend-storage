@@ -154,3 +154,14 @@ Write a SQL script that creates a stored procedure `AddBonus` to add a correctio
 Ensure the script is executable on any database.
 
 **File**: `6-bonus.sql`
+
+### Task 7: Average Score
+
+Write a SQL script that creates a stored procedure `ComputeAverageScoreForUser` to compute and store the average score for a student. The procedure should:
+
+- Accept 1 input: `user_id` (linked to an existing user).
+- Calculate the average score from the `corrections` table for the given user.
+- Update the `average_score` field in the `users` table with the calculated average.
+Ensure the script is executable on any database.
+
+**File**: `7-average_score.sql`
