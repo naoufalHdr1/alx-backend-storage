@@ -176,3 +176,36 @@ Write a SQL script that creates an index `idx_name_first` on the `names` table, 
 Ensure the script is executable on any database and improves query performance for searches starting with a letter.
 
 **File**: `8-index_my_names.sql`
+
+### Task 9: Optimize search and score
+
+Write a SQL script that creates an index `idx_name_first_score` on the `names` table, indexing the first letter of the `name` column and the `score` column. The script should:
+
+- Use a compound index on the first letter of the `name` field and the `score`.
+- Optimize searches for names starting with a specific letter and filtering by score, such as `LIKE 'a%' AND score < 80`.
+
+Ensure the script is executable on any database and improves query performance for combined searches on name and score.
+
+**File**: `9-index_name_score.sql`
+
+### Task 10: Safe divide
+
+Write a SQL script that creates a function `SafeDiv` which divides two integers and returns the result. If the divisor is zero, the function should return 0. The script should:
+
+- Create the function `SafeDiv` that accepts two arguments:
+    - `a`, INT (the numerator)
+    - `b`, INT (the divisor)
+- Return the result of `a / b` or 0 if `b == 0`.
+
+Ensure the function works with any database and handles edge cases where division by zero may occur.
+
+**File**: 10-div.sql
+
+### Task 11: No table for a meeting
+
+Write a SQL script to create a view called `need_meeting`, listing all students who meet the following criteria:
+
+- Have a score strictly less than 80.
+- Either have no `last_meeting` date or had their last meeting more than one month ago.
+
+**File**: `11-need_meeting.sql`
