@@ -142,3 +142,15 @@ Write a SQL script that creates a trigger to reset the `valid_email` attribute o
 Ensure the script is executable on any database.
 
 **File**: `5-valid_email.sql`
+
+### Task 6: Add bonus
+
+Write a SQL script that creates a stored procedure `AddBonus` to add a correction for a student. The procedure should:
+
+- Accept 3 inputs: `user_id` (linked to an existing user), `project_name` (either existing or new), and `score` (integer value).
+- Check if the project exists in the `projects` table. If not, create the new project.
+- Insert a new correction into the `corrections` table with the provided score for the corresponding user and project.
+
+Ensure the script is executable on any database.
+
+**File**: `6-bonus.sql`
