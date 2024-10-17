@@ -61,3 +61,17 @@ For tasks requiring data imports, such as the metal bands data:
 $ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
 $ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
 ```
+
+## Tasks
+
+### Task 0: We are all unique!
+
+Create a SQL script to define a users table with:
+
+- `id`: integer, primary key, auto-increment.
+- `email`: string, unique, not null.
+- `name`: string.
+
+Ensure the table won't be recreated if it exists.
+
+**File**: `0-uniq_users.sql`
