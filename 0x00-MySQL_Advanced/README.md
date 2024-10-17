@@ -114,3 +114,15 @@ Create a SQL script that lists all bands with `Glam rock` as their main style, r
 Ensure that the lifespan is computed using the band's formation year, and the script should be executable on any database.
 
 **File**: `3-glam_rock.sql`
+
+### Task 4: Buy buy buy
+
+Create a SQL script that defines a trigger to decrease the `quantity` of an item in the `items` table whenever a new order is added to the `orders` table. The script should:
+
+1. Define the `items` table with `name` (string) and `quantity` (integer).
+2. Define the `orders` table with `item_name` (string) and `number` (integer).
+3. Implement a trigger to update the `quantity` based on the `number` of items ordered, allowing negative quantities.
+
+Ensure the script is executable on any database.
+
+**File**: `4-store.sql`
