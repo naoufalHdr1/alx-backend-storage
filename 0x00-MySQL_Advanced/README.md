@@ -209,3 +209,13 @@ Write a SQL script to create a view called `need_meeting`, listing all students 
 - Either have no `last_meeting` date or had their last meeting more than one month ago.
 
 **File**: `11-need_meeting.sql`
+
+### Task 12 : Average weighted score
+
+Write a SQL script to create a stored procedure `ComputeAverageWeightedScoreForUser` that computes the average weighted score for a student. The procedure should:
+
+- Accept one input, `user_id`, which is linked to the `users.id`.
+- Calculate the weighted average score based on each project's score and weight.
+- Update the student's `average_score` in the `users` table.
+
+This requires combining data from the `users`, `projects`, and `corrections` tables to compute the weighted average. 
