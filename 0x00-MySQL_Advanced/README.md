@@ -210,7 +210,7 @@ Write a SQL script to create a view called `need_meeting`, listing all students 
 
 **File**: `11-need_meeting.sql`
 
-### Task 12 : Average weighted score
+### Task 12 : Average weighted score `#advanced`
 
 Write a SQL script to create a stored procedure `ComputeAverageWeightedScoreForUser` that computes the average weighted score for a student. The procedure should:
 
@@ -219,3 +219,20 @@ Write a SQL script to create a stored procedure `ComputeAverageWeightedScoreForU
 - Update the student's `average_score` in the `users` table.
 
 This requires combining data from the `users`, `projects`, and `corrections` tables to compute the weighted average. 
+
+**File**: `100-average_weighted_score.sql`
+
+### Task 13: Average weighted score for all! `#advanced`
+
+Write a SQL script to create a stored procedure named `ComputeAverageWeightedScoreForUsers` that calculates and stores the average weighted score for all students without requiring any input parameters.
+
+**Requirements:**
+
+The procedure should compute the average weighted score for each student based on their scores and the weights of the projects associated with them.
+It should update the `average_score` field in the `users` table for each student after the calculation.
+
+**Tips:**
+
+Utilize the formula for calculating a weighted average, combining data from the `users`, `projects`, and `corrections` tables.
+
+**File**: `101-average_weighted_score.sql`
