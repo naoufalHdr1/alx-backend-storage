@@ -102,3 +102,11 @@ Create a script that adds a new attribute address with the value "972 Mission st
 
 Create a script that deletes all documents with `name="Holberton school"` in the `school` collection.
 **File:** `7-delete`
+
+### Task 8: List all docuemnts in Python
+
+Write a Python function that lists all documents in a collection:
+
+- Prototype: `def list_all(mongo_collection):`
+- Return an empty list if no document in the collection
+- `mongo_collection` will be the `pymongo` collection object
