@@ -143,3 +143,21 @@ Write a Python function that returns the list of school having a specific topic:
 - `topic` (string) will be topic searched
 
 **File:** `11-schools_by_topic.py`
+
+### Task 12: Log stats
+
+Write a Python script that provides some stats about Nginx logs stored in MongoDB:
+
+- Database: `logs`
+- Collection: `nginx`
+- Display (same as the example):
+    - first line: `x logs` where `x` is the number of documents in this collection
+    - second line: `Methods`:
+    - 5 lines with the number of documents with the `method = ["GET", "POST", "PUT", "PATCH", "DELETE"]` in this order (see example below - warning: it’s a tabulation before each line)
+    - one line with the number of documents with:
+        - `method=GET`
+        - `path=/status`
+
+You can use this dump as data sample: [dump.zip](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-webstack/411/dump.zip)
+
+**File:** `12-log_stats.py`
