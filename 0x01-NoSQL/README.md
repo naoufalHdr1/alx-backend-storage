@@ -110,3 +110,15 @@ Write a Python function that lists all documents in a collection:
 - Prototype: `def list_all(mongo_collection):`
 - Return an empty list if no document in the collection
 - `mongo_collection` will be the `pymongo` collection object
+
+**File:** `8-all.py`
+
+### Task 9: Insert a document in Python
+
+Write a Python function that inserts a new document in a collection based on `kwargs`:
+
+- Prototype: `def insert_school(mongo_collection, **kwargs):`
+- `mongo_collection` will be the `pymongo` collection object
+- Returns the new `_id`
+
+**File:** `9-insert_school.py`
