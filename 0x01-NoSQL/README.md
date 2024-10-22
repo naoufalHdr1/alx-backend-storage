@@ -122,3 +122,14 @@ Write a Python function that inserts a new document in a collection based on `kw
 - Returns the new `_id`
 
 **File:** `9-insert_school.py`
+
+### Task 10: Change school topics
+
+Write a Python function that changes all topics of a school document based on the name:
+
+- Prototype: `def update_topics(mongo_collection, name, topics):`
+- `mongo_collection` will be the `pymongo` collection object
+- `name` (string) will be the school name to update
+- `topics` (list of strings) will be the list of topics approached in the school
+
+**File:** `10-update_topics.py`
