@@ -161,3 +161,11 @@ Write a Python script that provides some stats about Nginx logs stored in MongoD
 You can use this dump as data sample: [dump.zip](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-webstack/411/dump.zip)
 
 **File:** `12-log_stats.py`
+
+### Task 13: Regex filter `#advanced`
+
+Write a script that lists all documents with `name` starting by `Holberton` in the collection `school`:
+
+- The database name will be passed as option of `mongo` command
+
+**File:** `100-find`
