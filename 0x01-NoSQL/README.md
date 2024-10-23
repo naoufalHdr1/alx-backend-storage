@@ -169,3 +169,12 @@ Write a script that lists all documents with `name` starting by `Holberton` in t
 - The database name will be passed as option of `mongo` command
 
 **File:** `100-find`
+
+### Task 15: Log stats - new version `#advanced`
+
+Improve `12-log_stats.py` by adding the top 10 of the most present IPs in the collection `nginx` of the database logs:
+
+- The IPs top must be sorted (like the example below)
+
+**File:** `102-log_stats.py`
+
