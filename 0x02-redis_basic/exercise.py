@@ -114,4 +114,7 @@ class Cache:
         # Print the replay output
         print(f"{method.__qualname__} was called {len(inputs)} times:")
         for input_val, output_val in zip(inputs, outputs):
-            print(f"{method.__qualname__}(*{input_val.decode('utf-8')}) -> {output_val.decode('utf-8')}")
+            print(
+                    f"{method.__qualname__}(*{input_val.decode('utf-8')}) "
+                    f"-> {output_val.decode('utf-8')}"
+            )
