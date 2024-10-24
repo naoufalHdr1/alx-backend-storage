@@ -16,7 +16,7 @@ def count_calls(method: Callable) -> Callable:
     The count is stored in Redis using the method's qualified name.
     """
     @wraps(method)
-    def wrapper(self, *args, **kwargs):
+    def wrapper(self, *args, **kwargs) -> Any:
         """Wrapper function that increments the call count in Redis."""
         # Increment the call count using Redis INCR command
         self._redis.incr(method.__qualname__)
