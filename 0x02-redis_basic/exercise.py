@@ -37,6 +37,8 @@ class Cache:
         a transformation.
         """
         data = self._redis.get(key)
+        if data is None:
+            return None
 
         return fn(data) if fn is not None else data
 
