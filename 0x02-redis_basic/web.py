@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+"""
+Module with tools for request caching and tracking
+"""
+
 import requests
 import redis
 from functools import wraps
