@@ -102,3 +102,16 @@ class Cache:
         Retrieve an integer from Redis by key.
         """
         return self.get(key, lambda d: int(d))
+
+    def replay(self, method: Callable):
+        """Display the history of calls for a given method."""
+        input_key = f"{method.__qualname__}:inputs"
+        output_key = f"{method.__qualname__}:outputs"
+
+        inputs = self._redis.lrange(input_key, 0, -1)
+        outputs = self._redis.lrange(output_key, 0, -1)
+
+        # Print the replay output
+        print(f"{method.__qualname__} was called {len(inputs)} times:")
+        for input_val, output_val in zip(inputs, outputs):
+            print(f"{method.__qualname__}(*{input_val.decode('utf-8')}) -> {output_val.decode('utf-8')}")
