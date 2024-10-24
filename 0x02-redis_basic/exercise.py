@@ -6,7 +6,7 @@ generated key, and the key is returned to the caller.
 """
 import redis
 import uuid
-from typing import Union, Callable, Optional
+from typing import Union, Callable, Optional, Any
 from functools import wraps
 
 
